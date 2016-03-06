@@ -1852,3 +1852,47 @@ a.create {
   width: 61%;
 }
 }
+/*自己添加的*/
+.pagination-container {
+	width: 25%;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 3rem;
+}
+.pagination-prev {
+	float: left;
+	/*width: 5em;*/
+    width: 20%;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+	background-color: #5bc0de;
+	color: #fff;
+	cursor: pointer;
+}
+.pagination-next {
+	float: right;
+	/*width: 5em;*/
+    width: 20%;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+	background-color: #5bc0de;
+	color: #fff;
+	cursor: pointer;
+}
+.pagination-prev:hover {
+	background-color: #a94442;
+}
+.pagination-next:hover {
+	background-color: #a94442;
+}
+.pagination-show-page {
+	position:absolute;
+	width: 10em;
+	height: 3em;
+	line-height: 3em;
+	margin-left: 50%;
+	left: -5em;
+	text-align: center;
+}
