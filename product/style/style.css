@@ -1897,3 +1897,20 @@ a.create {
 	text-align: center;
 }
 
+/* 自定义属性 */
+
+.table td:last-child {
+	position: relative;
+}
+b.table-cancle{
+	font-size:1em;
+	line-height: 1.5em;
+	padding: 0 .5em;
+	color: #fff;
+	background-color:#4cae4c;
+	font-weight:400;
+	position:absolute;
+	top: 0;
+	left:3em;
+	cursor: pointer;
+}
