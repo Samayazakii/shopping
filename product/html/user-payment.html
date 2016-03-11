@@ -185,7 +185,17 @@
     </table>
 </div>
 <!---->
+<div class="footer" style="margin-bottom: 50px;">
+    <div class="col-md-10 footer-left left-footer">
+        <div class="clearfix"> </div>
+    </div>
+    <div class="col-md-2 footer-left left-footer">
+        <h4 style="cursor: pointer;text-align: center;background-color: #a94442">确认支付</h4>
 
+        <div class="clearfix"> </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
 
 <!---->
 <div class="footer">
@@ -239,23 +249,9 @@
         $('.table')[0].addEventListener('click', function(e) {
             e = e || window.e;
             var eTarget = e.target || e.srcElement;
-            if(eTarget && eTarget.nodeName.toUpperCase() === 'B') {
-                var cancle = '<b class="table-cancle">取消</b>';
-                switch (eTarget.innerHTML) {
-                    case '删除':
-                        eTarget.innerHTML = '确定';
-                        $(cancle).insertAfter(eTarget);
-                        break;
-                    case '确定':
-                        eTarget.parentNode.parentNode.remove();
-                        //  删除之后还要做啥写在这儿
-                        break;
-                    case '取消':
-                        $(eTarget).prev().text('删除');
-                        eTarget.remove();
-                        break;
-                    default: break;
-                }
+            if(eTarget && eTarget.nodeName.toUpperCase() === 'IMG') {
+                $('.table img').css({border: 'none'});
+                $(eTarget).css({border: '1px solid #0087D5'});
             }
 
         }, false);
