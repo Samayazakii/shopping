@@ -1931,3 +1931,10 @@ b.table-cancle{
 	max-height: 33px;
 	cursor: pointer;
 }
+
+#show-addProduct {
+
+}
+#show-addProduct td{
+	text-align: center;
+}
