@@ -1899,6 +1899,14 @@ a.create {
 
 /* 自定义属性 */
 
+.container {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+}
+/*table {*/
+	/*margin-top: 3rem;*/
+/*}*/
+
 .table td:last-child {
 	position: relative;
 }
