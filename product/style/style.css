@@ -514,6 +514,18 @@ b.detete{
     left:0;
     cursor: pointer;
 }
+b.manage{
+	font-size:1em;
+	line-height: 1.5em;
+	padding: 0;
+	color: #fff;
+	background-color:#0087D5;
+	font-weight:400;
+	position:absolute;
+	top:0;
+	left:5em;
+	cursor: pointer;
+}
 b.cancle{
     font-size:1em;
     line-height: 1.5em;
@@ -1932,7 +1944,7 @@ b.table-cancle{
 	cursor: pointer;
 }
 
-#show-addProduct, #show-changePass {
+#show-addProduct, #show-changePass, #show-userInfo {
 	width: 40%;
 	margin: 0 auto;
 	text-align: center
