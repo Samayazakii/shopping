@@ -43,6 +43,8 @@
                     <li><a href="#" id="to-addProduct">添加商品</a></li>
                     <li><a href="#" id="to-manageUser">用户管理</a></li>
                     <li><a href="#" id="to-manageOrder">订单管理</a></li>
+                    <li><a href="#" id="to-changePass">修改密码</a></li>
+                    <li><a href="#" id="to-logout">退出账户</a></li>
                 </ul>
             </div>
             <div class="clearfix"> </div>
@@ -57,93 +59,52 @@
             <caption class="manage-cap"><h3>商品管理界面</h3></caption>
             <thead>
             <tr>
-                <th>商品</th>
-                <th>产品编号</th>
-                <th>交易日期</th>
-                <th>购买用户</th>
-                <th>付款状态</th>
-                <th>订单状态</th>
+                <th>编号</th>
+                <th>名称</th>
+                <th>尺寸</th>
+                <th>颜色</th>
+                <th>分类</th>
+                <th>价格</th>
+                <th>库存</th>
                 <th>订单操作</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>NO12345</td>
+                <td>1</td>
                 <td>PRODUCT12345</td>
-                <td>2016/06/06</td>
-                <td>How</td>
-                <td>已付款</td>
-                <td>已发货</td>
+                <td>170</td>
+                <td>red</td>
+                <td>suit</td>
+                <td>600.00</td>
+                <td>60</td>
                 <td><b class="detete">删除</b></td>
             </tr>
             <tr>
-                <td>NO12345</td>
+                <td>1</td>
                 <td>PRODUCT12345</td>
-                <td>2016/06/06</td>
-                <td>How</td>
-                <td>已付款</td>
-                <td>已发货</td>
+                <td>170</td>
+                <td>red</td>
+                <td>suit</td>
+                <td>600.00</td>
+                <td>60</td>
                 <td><b class="detete">删除</b></td>
             </tr>
             <tr>
-                <td>NO12345</td>
+                <td>1</td>
                 <td>PRODUCT12345</td>
-                <td>2016/06/06</td>
-                <td>How</td>
-                <td>已付款</td>
-                <td>已发货</td>
-                <td><b class="detete">删除</b></td>
-            </tr>
-            <tr>
-                <td>NO12345</td>
-                <td>PRODUCT12345</td>
-                <td>2016/06/06</td>
-                <td>How</td>
-                <td>已付款</td>
-                <td>已发货</td>
-                <td><b class="detete">删除</b></td>
-            </tr>
-            <tr>
-                <td>NO12345</td>
-                <td>PRODUCT12345</td>
-                <td>2016/06/06</td>
-                <td>How</td>
-                <td>已付款</td>
-                <td>已发货</td>
-                <td><b class="detete">删除</b></td>
-            </tr>
-            <tr>
-                <td>NO12345</td>
-                <td>PRODUCT12345</td>
-                <td>2016/06/06</td>
-                <td>How</td>
-                <td>已付款</td>
-                <td>已发货</td>
+                <td>170</td>
+                <td>red</td>
+                <td>suit</td>
+                <td>600.00</td>
+                <td>60</td>
                 <td><b class="detete">删除</b></td>
             </tr>
             </tbody>
         </table>
 
-        <!--<div id="show-addProduct">-->
-            <!--<caption class="manage-cap"><h3 style="text-align: center">添加商品界面</h3></caption>-->
-            <!--<form action="">-->
-                <!---->
-            <!--</form>-->
-        <!--</div>-->
-
-        <table id="show-addProduct" class="table" style="width: 50%;margin: 0 auto;">
+        <table id="show-addProduct" class="table">
             <caption class="manage-cap"><h3>添加商品界面</h3></caption>
-            <!--<thead>-->
-            <!--<tr>-->
-                <!--<th>商品名称</th>-->
-                <!--<th>商品分类</th>-->
-                <!--<th>商品编号</th>-->
-                <!--<th>商品描述</th>-->
-                <!--<th>付款状态</th>-->
-                <!--<th>订单状态</th>-->
-                <!--<th>订单操作</th>-->
-            <!--</tr>-->
-            <!--</thead>-->
             <tbody>
             <tr>
                 <td>
@@ -156,15 +117,7 @@
             </tr>
             <tr>
                 <td>
-                    产品编号
-                </td>
-                <td>
-                    <input type="text" placeholder="请输入产品编号">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    产品规格
+                    产品分类
                 </td>
                 <td>
                     <select name="" id="">
@@ -178,11 +131,31 @@
 
             </tr>
             <tr>
+                <td>
+                    产品价格
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入产品价格">
+                </td>
 
             </tr>
             <tr>
                 <td>
-
+                    产品尺寸
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">请选择尺寸</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    产品颜色
                 </td>
                 <td>
                     <select name="" id="">
@@ -196,20 +169,26 @@
             </tr>
             <tr>
                 <td>
-
+                    产品图片
                 </td>
                 <td>
-                    <select name="" id="">
-                        <option value="">请选择尺寸</option>
-                        <option value="">分类1</option>
-                        <option value="">分类1</option>
-                        <option value="">分类1</option>
-                        <option value="">分类1</option>
-                    </select>
+                    <input type="file" name="file" class="upload-pic">
                 </td>
             </tr>
             <tr>
+                <td>
+                    详细描述
+                </td>
+                <td>
+                    <textarea name="text-project" id="" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
                 <td></td>
+                <td>
+                    <a href="" class="view">确认添加</a>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -355,21 +334,60 @@
             </tr>
             </tbody>
         </table>
+
+        <table id="show-changePass" class="table">
+            <caption class="manage-cap"><h3>修改管理员密码</h3></caption>
+            <tbody>
+            <tr>
+                <td>
+                    原登录密码
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入原登录密码">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    新登录密码
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入新的登录密码">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    确认新密码
+                </td>
+                <td>
+                    <input type="text" placeholder="确认输入">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <a href="" class="view">确认修改</a>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
     </div>
 </div>
 
-
-<div class="pagination-container">
-    <div class="pagination-prev">
-        <
-    </div>
-    <div class="pagination-show-page">
-        第 <span id="pagination-page"> 1 </span> 页
-    </div>
-    <div class="pagination-next">
-        >
-    </div>
-</div>
+<!---->
+<!--<div class="pagination-container">-->
+    <!--<div class="pagination-prev">-->
+        <!--<-->
+    <!--</div>-->
+    <!--<div class="pagination-show-page">-->
+        <!--第 <span id="pagination-page"> 1 </span> 页-->
+    <!--</div>-->
+    <!--<div class="pagination-next">-->
+        <!--&gt;-->
+    <!--</div>-->
+<!--</div>-->
 <!---->
 
 <!---->
@@ -446,13 +464,12 @@
 
 
 
-        var manageToggle = ["to-manageProduct", "to-addProduct", "to-manageUser", "to-manageOrder"];
-        var manageList = [$("#show-manageProduct"), $("#show-addProduct"), $("#show-manageUser"), $("#show-manageOrder")];
+        var manageToggle = ["to-manageProduct", "to-addProduct", "to-manageUser", "to-manageOrder", "to-changePass"];
+        var manageList = [$("#show-manageProduct"), $("#show-addProduct"), $("#show-manageUser"), $("#show-manageOrder"), $("#show-changePass")];
 
         manageList.forEach(function(item, index) {
             item.hide();
         });
-//        manageList[0].show();
         manageList[1].show();
 
         $("#choose-manage")[0].addEventListener('click', function(e) {
@@ -462,21 +479,11 @@
                 manageList.forEach(function(item, index) {
                     item.hide();
                 });
-                switch (eTarget.id) {
-                    case manageToggle[0]:
-                        manageList[0].show();
-                        break;
-                    case manageToggle[1]:
-                        manageList[1].show();
-                        break;
-                    case manageToggle[2]:
-                        manageList[2].show();
-                        break;
-                    case manageToggle[3]:
-                        manageList[3].show();
-                        break;
-                    default: break;
-                }
+                manageToggle.map(function(item, index) {
+                    if(eTarget.id === item) {
+                        manageList[index].show();
+                    }
+                });
             }
         }, false);
 

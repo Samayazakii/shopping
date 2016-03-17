@@ -1932,9 +1932,23 @@ b.table-cancle{
 	cursor: pointer;
 }
 
-#show-addProduct {
-
+#show-addProduct, #show-changePass {
+	width: 40%;
+	margin: 0 auto;
+	text-align: center
 }
-#show-addProduct td{
+#show-addProduct td {
 	text-align: center;
+}
+#show-addProduct select {
+	appearance:text;
+	-moz-appearance:text; /* Firefox */
+	-webkit-appearance:text; /* Safari 和 Chrome */
+	width: 11em;
+}
+.upload-pic {
+	/*float: right;*/
+	display: inline-block !important;
+	width: 11em;
+	/*text-align: center;*/
 }
