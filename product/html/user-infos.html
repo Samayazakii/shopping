@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../style/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="home.html"><img src="../images/logo.png" alt="" ></a>
+    </div>
+    <div  class="header-top">
+        <div class="header-grid">
+            <ul class="header-in">
+                <li ><a href="#">我的账户</a></li>
+                <li ><a href="#">购物车</a></li>
+                <li ><a href="#">注册</a></li>
+                <li ><a href="#">登录</a></li>
+            </ul>
+            <div class="search-box">
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="想要点什么..." type="search" name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"> </span>
+                    </form>
+                </div>
+            </div>
+            <div class="online">
+                <a href="#" >恵购运动</a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-bottom">
+            <div class="h_menu4"><!-- start h_menu4 -->
+                <a class="toggleMenu" href="#">Menu</a>
+                <ul class="nav" id="choose-manage">
+                    <li class="active"><a href="#" id="to-changePass">修改密码</a></li>
+                    <li><a href="#" id="to-myInfo">个人信息</a></li>
+                    <li><a href="#" id="to-address">收货地址</a></li>
+                    <li><a href="#" id="to-cart">购物车</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!---->
+<div style="width: 100%; height: 40em; overflow: scroll; padding-left: 5em; padding-right: 5em;">
+    <div class="table-responsive" style="padding-top: 3em;">
+        <table id="show-changePass" class="table">
+            <caption class="manage-cap"><h3>修改密码</h3></caption>
+            <tbody>
+            <tr>
+                <td>
+                    原登录密码
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入原登录密码">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    新登录密码
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入新的登录密码">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    确认新密码
+                </td>
+                <td>
+                    <input type="text" placeholder="确认输入">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <a href="" class="view">确认修改</a>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+
+        <table id="show-myInfo" class="table">
+            <caption class="manage-cap"><h3>商品管理界面</h3></caption>
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>尺寸</th>
+                <th>颜色</th>
+                <th>分类</th>
+                <th>价格</th>
+                <th>库存</th>
+                <th>订单操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>PRODUCT12345</td>
+                <td>170</td>
+                <td>red</td>
+                <td>suit</td>
+                <td>600.00</td>
+                <td>60</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>PRODUCT12345</td>
+                <td>170</td>
+                <td>red</td>
+                <td>suit</td>
+                <td>600.00</td>
+                <td>60</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>PRODUCT12345</td>
+                <td>170</td>
+                <td>red</td>
+                <td>suit</td>
+                <td>600.00</td>
+                <td>60</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table id="show-address" class="table">
+            <caption class="manage-cap"><h3>添加商品界面</h3></caption>
+            <tbody>
+            <tr>
+                <td>
+                    产品名称
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入产品名称">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    产品分类
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">请选择分类</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    产品价格
+                </td>
+                <td>
+                    <input type="text" placeholder="请输入产品价格">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    产品尺寸
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">请选择尺寸</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    产品颜色
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">请选择颜色</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                        <option value="">分类1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    产品图片
+                </td>
+                <td>
+                    <input type="file" name="file" class="upload-pic">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    详细描述
+                </td>
+                <td>
+                    <textarea name="text-project" id="" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <a href="" class="view">确认添加</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table id="show-addAddress" class="table">
+            <caption class="manage-cap"><h3>用户管理界面</h3></caption>
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>账号</th>
+                <th>用户名</th>
+                <th>余额</th>
+                <th>电话号码</th>
+                <th>上次登录时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>user001</td>
+                <td>蛤蟆皮</td>
+                <td>1000.00</td>
+                <td>13000000000</td>
+                <td>2016-03-03 18:00:00</td>
+                <td>
+                    <b class="detete">删除</b>
+                    <b class="manage">管理</b>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>user001</td>
+                <td>蛤蟆皮</td>
+                <td>1000.00</td>
+                <td>13000000000</td>
+                <td>2016-03-03 18:00:00</td>
+                <td>
+                    <b class="detete">删除</b>
+                    <b class="manage">管理</b>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>user001</td>
+                <td>蛤蟆皮</td>
+                <td>1000.00</td>
+                <td>13000000000</td>
+                <td>2016-03-03 18:00:00</td>
+                <td>
+                    <b class="detete">删除</b>
+                    <b class="manage">管理</b>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table id="show-changeInfo" class="table">
+            <caption class="manage-cap"><h3>订单管理界面</h3></caption>
+            <thead>
+            <tr>
+                <th>订单</th>
+                <th>产品编号</th>
+                <th>交易日期</th>
+                <th>购买用户</th>
+                <th>付款状态</th>
+                <th>订单状态</th>
+                <th>订单操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>NO12345</td>
+                <td>PRODUCT12345</td>
+                <td>2016/06/06</td>
+                <td>How</td>
+                <td>已付款</td>
+                <td>已发货</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>NO12345</td>
+                <td>PRODUCT12345</td>
+                <td>2016/06/06</td>
+                <td>How</td>
+                <td>已付款</td>
+                <td>已发货</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>NO12345</td>
+                <td>PRODUCT12345</td>
+                <td>2016/06/06</td>
+                <td>How</td>
+                <td>已付款</td>
+                <td>已发货</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>NO12345</td>
+                <td>PRODUCT12345</td>
+                <td>2016/06/06</td>
+                <td>How</td>
+                <td>已付款</td>
+                <td>已发货</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>NO12345</td>
+                <td>PRODUCT12345</td>
+                <td>2016/06/06</td>
+                <td>How</td>
+                <td>已付款</td>
+                <td>已发货</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            <tr>
+                <td>NO12345</td>
+                <td>PRODUCT12345</td>
+                <td>2016/06/06</td>
+                <td>How</td>
+                <td>已付款</td>
+                <td>已发货</td>
+                <td><b class="detete">删除</b></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<!---->
+<!--<div class="pagination-container">-->
+<!--<div class="pagination-prev">-->
+<!--<-->
+<!--</div>-->
+<!--<div class="pagination-show-page">-->
+<!--第 <span id="pagination-page"> 1 </span> 页-->
+<!--</div>-->
+<!--<div class="pagination-next">-->
+<!--&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!---->
+
+<!---->
+<div class="footer">
+    <div class="col-md-6 footer-left">
+        <h4>恵购运动</h4>
+        <div class="run-top">
+            <ul class="run-grid" >
+                <li><a href="product.html">商品分类</a></li>
+                <li><a href="product.html">首页</a></li>
+                <li><a href="product.html">上装</a></li>
+                <li><a href="product.html">下装</a></li>
+                <li><a href="product.html">鞋子</a></li>
+                <li><a href="product.html">箱包</a></li>
+            </ul>
+            <ul class="run-grid">
+                <p class="footer-class">Copyright &copy; 2016. 恵购运动 版权所有</p>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="col-md-6 footer-left left-footer">
+        <h4>了解更多</h4>
+        <div class="run-top top-run">
+            <ul class="run-grid">
+                <li><a href="#">用户注册</a></li>
+                <li><a href="#">我的账户</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="">管理员入口</a></li>
+            </ul>
+            <ul class="run-grid">
+                <p class="footer-class">Copyright &copy; 2016.Huigou Sports All rights reserved.</p>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+
+<script src="../js/classie.js"></script>
+<script src="../js/uisearch.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+//        页面刷新自动滚到页首
+
+        new UISearch( document.getElementById( 'sb-search' ) );
+//        搜索
+
+        $(".table-responsive")[0].addEventListener('click', function(e) {
+            e = e || window.e;
+            var eTarget = e.target || e.srcElement;
+            if(eTarget && eTarget.nodeName.toUpperCase() === 'B') {
+                var cancle = '<b class="table-cancle">取消</b>';
+                switch (eTarget.innerHTML) {
+                    case '删除':
+                        eTarget.innerHTML = '确定';
+                        $(cancle).insertAfter(eTarget);
+                        break;
+                    case '确定':
+                        eTarget.parentNode.parentNode.remove();
+                        break;
+                    case '取消':
+                        $(eTarget).prev().text('删除');
+                        eTarget.remove();
+                        break;
+                    case '管理':
+                        manageList.forEach(function(item, index) {
+                            item.hide();
+                        });
+                        manageList[5].show();
+                        break;
+                    default: break;
+                }
+            }
+
+        }, false);
+
+
+
+        var manageToggle = ["to-manageProduct", "to-addProduct", "to-manageUser", "to-manageOrder", "to-changePass"];
+        var manageList = [$("#show-manageProduct"), $("#show-addProduct"), $("#show-manageUser"), $("#show-manageOrder"), $("#show-changePass"), $("#show-userInfo")];
+
+        manageList.forEach(function(item, index) {
+            item.hide();
+        });
+        manageList[2].show();
+
+        $("#choose-manage")[0].addEventListener('click', function(e) {
+            e = e || window.e;
+            var eTarget = e.target || e.srcElement;
+            if(eTarget && eTarget.nodeName.toUpperCase() === 'A') {
+                manageList.forEach(function(item, index) {
+                    item.hide();
+                });
+                manageToggle.map(function(item, index) {
+                    if(eTarget.id === item) {
+                        manageList[index].show();
+                    }
+                });
+            }
+        }, false);
+
+
+
+    });
+</script>
+</body>
+</html>
