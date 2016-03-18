@@ -93,10 +93,10 @@
         </table>
 
         <table id="show-myInfo" class="table">
-            <caption class="manage-cap"><h3>商品管理界面</h3></caption>
+            <caption class="manage-cap"><h3>个人信息</h3></caption>
             <thead>
             <tr>
-                <th>编号</th>
+                <th></th>
                 <th>名称</th>
                 <th>尺寸</th>
                 <th>颜色</th>
@@ -451,8 +451,8 @@
 
 
 
-        var manageToggle = ["to-manageProduct", "to-addProduct", "to-manageUser", "to-manageOrder", "to-changePass"];
-        var manageList = [$("#show-manageProduct"), $("#show-addProduct"), $("#show-manageUser"), $("#show-manageOrder"), $("#show-changePass"), $("#show-userInfo")];
+        var manageToggle = ["to-changePass", "to-myInfo", "to-address"];
+        var manageList = [$("#show-changePass"), $("#show-myInfo"), $("#show-address"), $("#show-addAddress"), $("#show-changeInfo")];
 
         manageList.forEach(function(item, index) {
             item.hide();
