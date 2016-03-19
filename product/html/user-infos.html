@@ -339,20 +339,6 @@
 </div>
 
 <!---->
-<!--<div class="pagination-container">-->
-<!--<div class="pagination-prev">-->
-<!--<-->
-<!--</div>-->
-<!--<div class="pagination-show-page">-->
-<!--第 <span id="pagination-page"> 1 </span> 页-->
-<!--</div>-->
-<!--<div class="pagination-next">-->
-<!--&gt;-->
-<!--</div>-->
-<!--</div>-->
-<!---->
-
-<!---->
 <div class="footer">
     <div class="col-md-6 footer-left">
         <h4>恵购运动</h4>
@@ -437,6 +423,14 @@
             item.hide();
         });
         manageList[4].show();
+        /*
+         *   要看的话改这里
+         *   0 - 改密码
+         *   1 - 查看个人信息
+         *   2 - 查看收货地址
+         *   3 - 添加收货地址 （隐藏）
+         *   4 - 更改信息 （隐藏）
+         * */
 
         $("#choose-manage")[0].addEventListener('click', function(e) {
             e = e || window.e;
