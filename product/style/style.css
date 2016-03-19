@@ -1956,7 +1956,7 @@ b.table-cancle{
 	cursor: pointer;
 }
 
-#show-addProduct, #show-changePass, #show-userInfo, #show-myInfo {
+#show-addProduct, #show-changePass, #show-userInfo, #show-myInfo, #show-addAddress, #show-changeInfo {
 	width: 40%;
 	margin: 0 auto;
 	text-align: center
@@ -1964,7 +1964,7 @@ b.table-cancle{
 #show-addProduct td {
 	text-align: center;
 }
-#show-addProduct select {
+#show-addProduct select , #show-addAddress select{
 	appearance:text;
 	-moz-appearance:text; /* Firefox */
 	-webkit-appearance:text; /* Safari 和 Chrome */
