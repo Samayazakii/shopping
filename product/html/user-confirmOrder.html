@@ -74,7 +74,6 @@
                 <th>颜色</th>
                 <th>数量</th>
                 <th>小计</th>
-                <!--<th>操作</th>-->
             </tr>
             </thead>
             <tbody>
@@ -113,6 +112,9 @@
             </tr>
             </tbody>
         </table>
+        <div id="item-sumPrice" class="col-lg-2" style="float: right; background-color: #c1e2b3">
+            总价
+        </div>
     </div>
 
     <div class="confirm-order-address">
@@ -199,6 +201,7 @@
 
         function initPrice () {
             var itemList = $("#items tr");
+            var sumPrice = 0;
             itemList.each(function (index, item) {
                 if (index === 0) {
                     return;
@@ -206,22 +209,26 @@
                 var amount = parseInt(item.querySelector("input").value);
                 var per = parseInt(item.children[4].innerHTML)/amount;
                 item.children[4].innerHTML = per * amount;
+                sumPrice += per * amount;
                 item.children[4].setAttribute("price", per);
             });
-
+            $("#item-sumPrice").text("总价: " + sumPrice);
         }
         initPrice();
 //      页面刷新初始化数字
 
         function refreshPrice () {
             var itemList = $("#items tr");
+            var sumPrice = 0;
             itemList.each(function (index, item) {
                 if (index === 0) {
                     return;
                 }
                 var amount = parseInt(item.querySelector("input").value);
                 item.children[4].innerHTML = parseInt(item.children[4]. getAttribute("price")) * amount;
+                sumPrice += parseInt(item.children[4]. getAttribute("price")) * amount;
             });
+            $("#item-sumPrice").text("总价: " + sumPrice);
         }
 //        改数量的时候变价格
 
@@ -232,6 +239,9 @@
             if (target && target.nodeName.toUpperCase() === "DIV") {
                 switch (target.className) {
                     case "item-minus":
+                        if (target.parentNode.children[1].value == 0) {
+                            break;
+                        }
                         target.parentNode.children[1].value--;
                         break;
                     case "item-plus":

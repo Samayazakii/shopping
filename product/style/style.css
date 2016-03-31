@@ -2010,3 +2010,6 @@ b.table-cancle{
 	text-align: center;
 	cursor: pointer;
 }
+#item-sumPrice {
+	text-align: right;
+}
