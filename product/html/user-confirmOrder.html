@@ -128,6 +128,15 @@
         </ul>
     </div>
 
+    <div class="confirm-toPay">
+        <div id="confirm-pay" class="col-lg-1" style="float: right">
+            去支付
+        </div>
+        <div id="confirm-sumPrice" class="col-lg-2" style="float: right;">
+            zongjia
+        </div>
+    </div>
+
 </div>
 <!---->
 
@@ -213,6 +222,7 @@
                 item.children[4].setAttribute("price", per);
             });
             $("#item-sumPrice").text("总价: " + sumPrice);
+            $("#confirm-sumPrice").text("总价: " + sumPrice);
         }
         initPrice();
 //      页面刷新初始化数字
@@ -229,6 +239,7 @@
                 sumPrice += parseInt(item.children[4]. getAttribute("price")) * amount;
             });
             $("#item-sumPrice").text("总价: " + sumPrice);
+            $("#confirm-sumPrice").text("总价: " + sumPrice);
         }
 //        改数量的时候变价格
 
@@ -239,7 +250,7 @@
             if (target && target.nodeName.toUpperCase() === "DIV") {
                 switch (target.className) {
                     case "item-minus":
-                        if (target.parentNode.children[1].value == 0) {
+                        if (target.parentNode.children[1].value == 1) {
                             break;
                         }
                         target.parentNode.children[1].value--;

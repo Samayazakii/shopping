@@ -1977,10 +1977,9 @@ b.table-cancle{
 	/*text-align: center;*/
 }
 
-/*16-03-31*/
+/* 16-03-31 */
 .confirm-order-container {
 	padding: 5em 0;
-	/*max-width: 1440px;*/
 	width: 90%;
 	margin: 0 auto;
 }
@@ -2010,6 +2009,16 @@ b.table-cancle{
 	text-align: center;
 	cursor: pointer;
 }
-#item-sumPrice {
-	text-align: right;
+#confirm-sumPrice , #item-sumPrice{
+	text-align: center;
+	line-height: 3em;
+	color: #fff;
+	background-color: #269abc;
+}
+#confirm-pay {
+	text-align: center;
+	line-height: 3em;
+	color: #fff;
+	background-color: #398439;
+	cursor: pointer;
 }
