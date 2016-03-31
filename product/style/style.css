@@ -1976,3 +1976,37 @@ b.table-cancle{
 	width: 11em;
 	/*text-align: center;*/
 }
+
+/*16-03-31*/
+.confirm-order-container {
+	padding: 5em 0;
+	/*max-width: 1440px;*/
+	width: 90%;
+	margin: 0 auto;
+}
+.confirm-order-container h2 {
+	margin-bottom: 1em;
+}
+.confirm-order-container h4 {
+	margin-bottom:.5em;
+}
+.confirm-order-container .list-group-item:hover {
+	cursor: pointer;
+}
+.confirm-order-container .list-group-item:nth-child(1) {
+	background-color: #fae2b3;
+}
+.confirm-order-container .confirm-order-items {
+	margin-top: 4em;
+	margin-bottom: 3em;
+}
+.confirm-order-container .col-lg-6 {
+	background-color: #fae2b3;
+}
+.confirm-order-container .item-minus, .confirm-order-container .item-plus {
+	display: inline-block;
+	width: 1em;
+	background-color: #fff;
+	text-align: center;
+	cursor: pointer;
+}

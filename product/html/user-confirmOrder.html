@@ -53,58 +53,83 @@
     <div class="clearfix"> </div>
 </div>
 <!---->
-<div style="width: 100%; height: 40em; overflow: scroll; padding-left: 5em; padding-right: 5em;">
-    <div class="table-responsive" style="padding-top: 3em;">
-        <table id="show-manageProduct" class="table">
-            <caption class="manage-cap"><h3>确认订单</h3></caption>
+
+<div class="confirm-order-container">
+
+    <h2>确认订单</h2>
+
+    <div class="confirm-order-items">
+        <h4>订单详情</h4>
+        <div class="col-lg-6">
+            订单号
+        </div>
+        <div class="col-lg-6">
+            时间
+        </div>
+        <table id="items" class="table">
             <thead>
             <tr>
-                <th>编号</th>
-                <th>名称</th>
+                <th>商品名称</th>
                 <th>尺寸</th>
                 <th>颜色</th>
-                <th>分类</th>
-                <th>价格</th>
-                <th>库存</th>
-                <th>订单操作</th>
+                <th>数量</th>
+                <th>小计</th>
+                <!--<th>操作</th>-->
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>1</td>
-                <td>PRODUCT12345</td>
-                <td>170</td>
-                <td>red</td>
-                <td>suit</td>
-                <td>600.00</td>
-                <td>60</td>
-                <td><b class="detete">删除</b></td>
+                <td>user001</td>
+                <td>蛤蟆皮</td>
+                <td>
+                    <div class="item-minus">-</div>
+                    <input type="text" class="item-amount" value="1" style="max-width: 3em; text-align: center">
+                    <div class="item-plus">+</div>
+                </td>
+                <td>100</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>PRODUCT12345</td>
-                <td>170</td>
-                <td>red</td>
-                <td>suit</td>
-                <td>600.00</td>
-                <td>60</td>
-                <td><b class="detete">删除</b></td>
+                <td>user001</td>
+                <td>蛤蟆皮</td>
+                <td>
+                    <div class="item-minus">-</div>
+                    <input type="text" value="2" style="max-width: 3em; text-align: center">
+                    <div class="item-plus">+</div>
+                </td>
+                <td>13000000000</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>PRODUCT12345</td>
-                <td>170</td>
-                <td>red</td>
-                <td>suit</td>
-                <td>600.00</td>
-                <td>60</td>
-                <td><b class="detete">删除</b></td>
+                <td>user001</td>
+                <td>蛤蟆皮</td>
+                <td>
+                    <div class="item-minus">-</div>
+                    <input type="text" value="2" style="max-width: 3em; text-align: center">
+                    <div class="item-plus">+</div>
+                </td>
+                <td>13000000000</td>
             </tr>
             </tbody>
         </table>
-
     </div>
+
+    <div class="confirm-order-address">
+        <h4>请选择收货地址</h4>
+        <ul class="list-group" id="address">
+            <li class="list-group-item">收货地址1</li>
+            <li class="list-group-item">收货地址2</li>
+            <li class="list-group-item">收货地址3</li>
+            <li class="list-group-item">收货地址4</li>
+            <li class="list-group-item">收货地址5</li>
+        </ul>
+    </div>
+
 </div>
+<!---->
+
+
 
 <!---->
 
@@ -149,13 +174,80 @@
 <script type="text/javascript" src="../js/nav.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-        function hideURLbar(){ window.scrollTo(0,1); }
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
 //        页面刷新自动滚到页首
 
-        new UISearch( document.getElementById( 'sb-search' ) );
+        new UISearch(document.getElementById('sb-search'));
 //        搜索
 
+        $("#address").on("click", function (ev) {
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+
+            if (target && target.className.toUpperCase("LIST-GROUP-ITEM")) {
+                $(".list-group-item").css({"backgroundColor": "#fff"});
+                $(target).css({"backgroundColor": "#fae2b3"});
+            }
+        });
+//        地址高亮
+
+        function initPrice () {
+            var itemList = $("#items tr");
+            itemList.each(function (index, item) {
+                if (index === 0) {
+                    return;
+                }
+                var amount = parseInt(item.querySelector("input").value);
+                var per = parseInt(item.children[4].innerHTML)/amount;
+                item.children[4].innerHTML = per * amount;
+                item.children[4].setAttribute("price", per);
+            });
+
+        }
+        initPrice();
+//      页面刷新初始化数字
+
+        function refreshPrice () {
+            var itemList = $("#items tr");
+            itemList.each(function (index, item) {
+                if (index === 0) {
+                    return;
+                }
+                var amount = parseInt(item.querySelector("input").value);
+                item.children[4].innerHTML = parseInt(item.children[4]. getAttribute("price")) * amount;
+            });
+        }
+//        改数量的时候变价格
+
+
+        $("#items").on("click", function (ev) {
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+            if (target && target.nodeName.toUpperCase() === "DIV") {
+                switch (target.className) {
+                    case "item-minus":
+                        target.parentNode.children[1].value--;
+                        break;
+                    case "item-plus":
+                        target.parentNode.children[1].value++;
+                        break;
+                    default: break;
+                }
+            }
+            refreshPrice();
+        });
+//      控制数量单个加减
+
+        $(".item-amount").change(function () {
+            refreshPrice();
+        });
+    });
 </script>
 </body>
 </html>
