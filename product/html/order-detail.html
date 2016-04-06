@@ -276,6 +276,32 @@
         new UISearch(document.getElementById('sb-search'));
 //        搜索
 
+        $(".confirm-toPay").on("click", function (ev) {
+            var ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+            if (target && target.nodeName.toUpperCase() === "DIV") {
+                var btns = ["confirm-price", "confirm-delete", "confirm-pay"];
+                var btnNum = 0;
+                btns.map(function (item, index) {
+                    if ($(target).hasClass(item)) {
+                        btnNum = index;
+                    }
+                });
+                switch (btnNum) {
+                    case 0:
+                        console.log(0);
+                        break;
+                    case 1:
+                        console.log(1);
+                        break;
+                    case 2:
+                        console.log(2);
+                        break;
+                    default: break;
+                }
+            }
+        });
+
     });
 </script>
 </body>
