@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../style/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        .confirm-toPay .col-lg-1, .confirm-toPay .col-lg-2 {
+            float: right;
+            text-align: center;
+            line-height: 3em;
+            color: #fff;
+            cursor: pointer;
+        }
+        .confirm-toPay .confirm-delete {
+            background-color: #880000;
+        }
+        .confirm-toPay .confirm-price {
+            background-color: #5bc0de;
+        }
+        .confirm-toPay .confirm-pay {
+            background-color: #398439;
+        }
+        .confirm-order-container .single-order {
+            margin-top: 5em;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a href="home.html"><img src="../images/logo.png" alt="" ></a>
+    </div>
+    <div  class="header-top">
+        <div class="header-grid">
+            <ul class="header-in">
+                <li ><a href="#">我的账户</a></li>
+                <li ><a href="#">购物车</a></li>
+                <li ><a href="#">注册</a></li>
+                <li ><a href="#">登录</a></li>
+            </ul>
+            <div class="search-box">
+                <div id="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="想要点什么..." type="search" name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"> </span>
+                    </form>
+                </div>
+            </div>
+            <div class="online">
+                <a href="#" >恵购运动</a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-bottom">
+            <div class="h_menu4"><!-- start h_menu4 -->
+                <a class="toggleMenu" href="#">Menu</a>
+                <ul class="nav" id="choose-manage">
+                    <li class="active"><a href="#" id="to-manageProduct">商品管理</a></li>
+                    <li><a href="#" id="to-addProduct">添加商品</a></li>
+                    <li><a href="#" id="to-manageUser">用户管理</a></li>
+                    <li><a href="#" id="to-manageOrder">订单管理</a></li>
+                    <li><a href="#" id="to-changePass">修改密码</a></li>
+                    <li><a href="#" id="to-logout">退出账户</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!---->
+
+<div class="confirm-order-container">
+    <h2>订单管理</h2>
+    <div class="single-order">
+        <div class="confirm-order-items" style="margin: 0;">
+            <div class="col-lg-6">
+                订单号
+            </div>
+            <div class="col-lg-6">
+                时间
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>尺寸</th>
+                    <th>颜色</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>user001</td>
+                    <td>蛤蟆皮</td>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>user001</td>
+                    <td>蛤蟆皮</td>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>user001</td>
+                    <td>蛤蟆皮</td>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="confirm-order-address">
+            <ul class="list-group">
+                <li class="list-group-item">收货地址1</li>
+            </ul>
+        </div>
+
+        <div class="confirm-toPay">
+            <div class="col-lg-1 confirm-pay">
+                去支付
+            </div>
+            <div class="col-lg-1 confirm-delete">
+                删除
+            </div>
+            <div class="col-lg-2 confirm-price">
+                总价
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div class="single-order">
+        <div class="confirm-order-items" style="margin: 0;">
+            <div class="col-lg-6">
+                订单号
+            </div>
+            <div class="col-lg-6">
+                时间
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>尺寸</th>
+                    <th>颜色</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>user001</td>
+                    <td>蛤蟆皮</td>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>user001</td>
+                    <td>蛤蟆皮</td>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>user001</td>
+                    <td>蛤蟆皮</td>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="confirm-order-address">
+            <ul class="list-group">
+                <li class="list-group-item">收货地址1</li>
+            </ul>
+        </div>
+
+        <div class="confirm-toPay">
+            <div class="col-lg-1 confirm-pay">
+                去支付
+            </div>
+            <div class="col-lg-1 confirm-delete">
+                删除
+            </div>
+            <div class="col-lg-2 confirm-price">
+                总价
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+
+<!---->
+
+
+
+<!---->
+
+<div class="footer">
+    <div class="col-md-6 footer-left">
+        <h4>恵购运动</h4>
+        <div class="run-top">
+            <ul class="run-grid" >
+                <li><a href="product.html">商品分类</a></li>
+                <li><a href="product.html">首页</a></li>
+                <li><a href="product.html">上装</a></li>
+                <li><a href="product.html">下装</a></li>
+                <li><a href="product.html">鞋子</a></li>
+                <li><a href="product.html">箱包</a></li>
+            </ul>
+            <ul class="run-grid">
+                <p class="footer-class">Copyright &copy; 2016. 恵购运动 版权所有</p>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="col-md-6 footer-left left-footer">
+        <h4>了解更多</h4>
+        <div class="run-top top-run">
+            <ul class="run-grid">
+                <li><a href="#">用户注册</a></li>
+                <li><a href="#">我的账户</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="">管理员入口</a></li>
+            </ul>
+            <ul class="run-grid">
+                <p class="footer-class">Copyright &copy; 2016.Huigou Sports All rights reserved.</p>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+
+<script src="../js/classie.js"></script>
+<script src="../js/uisearch.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+//        页面刷新自动滚到页首
+
+        new UISearch(document.getElementById('sb-search'));
+//        搜索
+
+    });
+</script>
+</body>
+</html>
