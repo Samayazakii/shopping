@@ -8,6 +8,42 @@
     <link href="../style/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../style/owl.carousel.css" rel="stylesheet">
     <script src="../js/jquery.min.js"></script>
+    <style>
+        .content .highlights {
+            padding: 4em 0;
+            cursor: pointer;
+        }
+        .highlights .item {
+            padding: 1em;
+            background-color: #31708f;
+            color: #fff;
+            transition: background 1s;
+            -moz-transition: background 1s;
+            -webkit-transition: background 1s;
+            -o-transition: background 1s;
+        }
+        .col-md-3:nth-child(1) .item {
+            background-color: #8a6d3b;
+        }
+        .col-md-3:nth-child(2) .item {
+            background-color: #5cb85c;
+        }
+        .col-md-3:nth-child(3) .item {
+            background-color: #4F4F4F;
+        }
+        .highlights .item:hover {
+            background-color: #5bc0de;
+        }
+        .item h3 {
+            margin-bottom: .5em;
+        }
+        .item .pic {
+            width: 16em;
+            height: 9em;
+            background-color: #c1e2b3;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 <div class="header">
@@ -182,35 +218,166 @@
         </div>
         <h6 class="your-in">H G sports</h6>
     </div>
-
-    <div class="content-grids" style="padding: 3em 0">
-        <div class="col-md-3">
-            <div style="padding: 1em;background-color: #5bc0de; color: #fff">
-                <h3 style="margin-bottom: .5em; ">优质的服务</h3>
-                <div style="width: 16em; height: 9em; background-color: #c1e2b3;margin: 0 auto;"></div>
+    <div class="content-grids" style="padding: 2em 0;">
+        <div class="col-md-4 content-grid">
+            <div style="background-color: #c1e2b3;color: #fff; text-align: center">
+                <h3 style="line-height: 7.5em;">商品分类</h3>
             </div>
+            <div class="clearfix"> </div>
         </div>
-        <div class="col-md-3">
-            <div style="padding: 1em;background-color: #5bc0de; color: #fff">
-                <h3 style="margin-bottom: .5em; ">高效的配送</h3>
-                <div style="width: 16em; height: 9em; background-color: #c1e2b3;margin: 0 auto;"></div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
             </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
         </div>
-        <div class="col-md-3">
-            <div style="padding: 1em;background-color: #5bc0de; color: #fff">
-                <h3 style="margin-bottom: .5em; ">完善的售后</h3>
-                <div style="width: 16em; height: 9em; background-color: #c1e2b3;margin: 0 auto;"></div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
             </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
         </div>
-        <div class="col-md-3">
-            <div style="padding: 1em;background-color: #5bc0de; color: #fff">
-                <h3 style="margin-bottom: .5em; ">舒适的体验</h3>
-                <div style="width: 16em; height: 9em; background-color: #c1e2b3;margin: 0 auto;"></div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
             </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <div style="background-color: #c1e2b3;color: #fff; text-align: center">
+                <h3 style="line-height: 7.5em;">商品分类</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <div style="background-color: #c1e2b3;color: #fff; text-align: center">
+                <h3 style="line-height: 7.5em;">商品分类</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+        <div class="col-md-4 content-grid">
+            <div style="background-color: #c1e2b3;color: #fff; text-align: center">
+                <h3 style="line-height: 7.5em;">商品分类</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <div style="background-color: #c1e2b3;color: #fff; text-align: center">
+                <h3 style="line-height: 7.5em;">商品分类</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
+            <div class="shoe">
+                <p>鞋子 是好事</p>
+                <label>¥100.22</label>
+                <a href="#">查看详情</a>
+            </div>
+            <div class="clearfix"> </div>
+            <b class="plus-in">+</b>
+        </div>
+        <div class="col-md-4 content-grid">
+            <div style="background-color: #c1e2b3;color: #fff; text-align: center">
+                <h3 style="line-height: 7.5em;">商品分类</h3>
+            </div>
+            <div class="clearfix"> </div>
         </div>
         <div class="clearfix"> </div>
     </div>
-
     <div class="content-top">
         <div class="col-md-4 top-content">
             <a href="#"><img class="img-responsive " src="../images/pi.jpg" alt=""></a>
@@ -223,43 +390,31 @@
         </div>
         <div class="clearfix"> </div>
     </div>
-    <div class="show-pics content-grids" style="padding: 0">
-        <div class="col-md-6" style="background-color: palevioletred; height: 30em;"></div>
-        <div class="col-md-6" style="background-color: #5bc0de; height: 30em;"></div>
-        <div class="clearfix"> </div>
-    </div>
-    <div class="content-grids">
-        <div class="col-md-4 content-grid">
-            <a href="#" class="lot"><img class="img-responsive " src="../images/sh.png" alt=""></a>
-            <div class="shoe">
-                <p>鞋子 是好事</p>
-                <label>¥100.22</label>
-                <a href="#">查看详情</a>
+    <div class="content-grids highlights">
+        <div class="col-md-3">
+            <div class="item">
+                <h3>优质的服务</h3>
+                <div class="pic"></div>
             </div>
-            <div class="clearfix"> </div>
-            <b class="plus-in">+</b>
         </div>
-        <div class="col-md-4 content-grid">
-            <a href="#" class="lot"><img class="img-responsive " src="../images/sh1.png" alt=""></a>
-            <div class="shoe">
-                <p>鞋子 是好事</p>
-                <label>¥200.22</label>
-                <a href="#">查看详情</a>
+        <div class="col-md-3">
+            <div class="item">
+                <h3>高效的配送</h3>
+                <div class="pic"></div>
             </div>
-            <div class="clearfix"> </div>
-            <b class="plus-in">+</b>
         </div>
-        <div class="col-md-4 content-grid">
-            <a href="#" class="lot"><img class="img-responsive " src="../images/sh2.png" alt=""></a>
-            <div class="shoe">
-                <p>鞋子 是好事</p>
-                <label>¥100.22</label>
-                <a href="#">查看详情</a>
+        <div class="col-md-3">
+            <div class="item">
+                <h3>完善的售后</h3>
+                <div class="pic"></div>
             </div>
-            <div class="clearfix"> </div>
-            <b class="plus-in">+</b>
         </div>
-
+        <div class="col-md-3">
+            <div class="item">
+                <h3>舒适的体验</h3>
+                <div class="pic"></div>
+            </div>
+        </div>
         <div class="clearfix"> </div>
     </div>
 </div>
