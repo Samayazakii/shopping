@@ -1,5 +1,12 @@
 <!--
     2016-04-22 变更
+    css 我写了注释的
+    加了个 css
+    加了个 js
+    上面两个 都带有 swiper
+    内联 js 我改了的 有注释
+    image 文件夹替换就可以 我加了几张图
+    不懂得直接问我吧
 -->
 <!DOCTYPE html>
 <html>
@@ -10,6 +17,7 @@
     <link href="../style/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../style/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../style/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/swiper.min.css">
     <script src="../js/jquery.min.js"></script>
     <style>
         .content .highlights {
@@ -45,6 +53,39 @@
             height: 9em;
             background-color: #c1e2b3;
             margin: 0 auto;
+        }
+
+        /* 下面是 14-04-22 更新  */
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-wrapper {
+            height: 48rem;
+        }
+        .swiper-slide {
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
         }
     </style>
 </head>
@@ -100,19 +141,23 @@
         <div class="clearfix"> </div>
     </div>
 </div>
-<div class="banner">
-    <div class="container">
-        <div class="banner-matter">
-            <h1>是好事<span>是好事</h1>
-            <div class="out">
-                <a href="#" class="find">发现更多</a>
-                <a href="#" class="shop">商城</a>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
+
+<!-- banner 那个 div 删掉了,换成了下面这个 -->
+<div class="swiper-container" >
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" data-hash="slide1" style="background: url('../images/swiper-1.png')"></div>
+        <div class="swiper-slide" data-hash="slide2" style="background: url('../images/swiper-2.png')"></div>
+        <div class="swiper-slide" data-hash="slide3" style="background: url('../images/swiper-3.png')"></div>
+        <div class="swiper-slide" data-hash="slide4" style="background: url('../images/swiper-4.png')"></div>
+        <div class="swiper-slide" data-hash="slide5" style="background: url('../images/swiper-5.png')"></div>
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
     <div class="clearfix"> </div>
 </div>
+<!-- banner 那个被换掉的 -->
+
 <div class="content">
     <div class="sport-your">
         <!-- start content_slider -->
@@ -444,6 +489,7 @@
     <div class="clearfix"> </div>
 </div>
 
+<script src="../js/swiper.jquery.min.js"></script>
 <script src="../js/classie.js"></script>
 <script src="../js/uisearch.js"></script>
 <script src="../js/owl.carousel.js"></script>
@@ -457,6 +503,18 @@
 
         new UISearch( document.getElementById( 'sb-search' ) );
 //        搜索
+
+
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: 3000,
+            speed: 500,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            hashnav: true
+        });
+//        14-04-22 加的 首页第一个大轮播
 
         $("#owl-demo").owlCarousel({
             items : 5,
