@@ -1,12 +1,6 @@
 <!--
-    2016-04-22 变更
-    css 我写了注释的
-    加了个 css
-    加了个 js
-    上面两个 都带有 swiper
-    内联 js 我改了的 有注释
-    image 文件夹替换就可以 我加了几张图
-    不懂得直接问我吧
+    16-04-24
+    改了这个页面(340行那里加了样式,然后去掉了一个按钮)和 style.css
 -->
 <!DOCTYPE html>
 <html>
@@ -55,7 +49,6 @@
             margin: 0 auto;
         }
 
-        /* 下面是 14-04-22 更新  */
 
         .swiper-container {
             width: 100%;
@@ -142,7 +135,6 @@
     </div>
 </div>
 
-<!-- banner 那个 div 删掉了,换成了下面这个 -->
 <div class="swiper-container" >
     <div class="swiper-wrapper">
         <div class="swiper-slide" data-hash="slide1" style="background: url('../images/swiper-1.png')"></div>
@@ -151,12 +143,10 @@
         <div class="swiper-slide" data-hash="slide4" style="background: url('../images/swiper-4.png')"></div>
         <div class="swiper-slide" data-hash="slide5" style="background: url('../images/swiper-5.png')"></div>
     </div>
-    <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 
     <div class="clearfix"> </div>
 </div>
-<!-- banner 那个被换掉的 -->
 
 <div class="content">
     <div class="sport-your">
@@ -347,7 +337,7 @@
         </div>
         <div class="clearfix"> </div>
     </div>
-    <div class="content-bottom">
+    <div class="content-bottom"  style="height: 630px; overflow: hidden">
         <div class="col-md-8 bottom-content">
             <div class="slider">
                 <div class="callbacks_container">
@@ -408,7 +398,7 @@
                     <div class="clearfix"> </div>
                 </div>
             </div>
-            <a href="#" class="view">所有商品</a>
+            <!--<a href="#" class="view">所有商品</a>-->
         </div>
         <div class="clearfix"> </div>
     </div>
